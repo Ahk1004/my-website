@@ -3,192 +3,277 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Mohammed Amir Hussain | Electrical Engineer</title>
+    
+    <!-- Fonts: Roboto (Headings) & Open Sans (Body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Icons: Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 <body>
 
     <!-- ===== NAVBAR ===== -->
-    <header>
+    <header id="header">
         <nav class="navbar">
-            <div class="logo">MyPortfolio</div>
+            <div class="logo">
+                <i class="fas fa-bolt"></i> MAH<span>.Eng</span>
+            </div>
 
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#contact" class="nav-btn">Contact</a></li>
             </ul>
 
             <div class="menu-toggle" id="menuToggle">
-                ☰
+                <i class="fas fa-bars"></i>
             </div>
         </nav>
     </header>
 
-    <!-- ===== HOME SECTION ===== -->
+    <!-- ===== HERO SECTION ===== -->
     <section class="home" id="home">
+        <div class="grid-overlay"></div> <!-- Engineering Blueprint Effect -->
         <div class="home-content">
-            <h1>Hello, I'm <span>Mohammed Amir Hussain</span></h1>
+            <span class="badge">Professional Portfolio</span>
+            <h1>Mohammed Amir Hussain</h1>
             <h2>Electrical Engineer</h2>
             <p>
-                Results-driven Electrical Engineer, with 10+ years of experience in
-                power distribution design, installation, and testing electrical systems and components.
-            
+                Results-driven engineer with <span class="highlight">10+ years of experience</span> in Power Distribution, Installation, and Commissioning. 
+                Delivering reliable energy solutions for the Aviation, Mining, and Construction sectors.
             </p>
-            <a href="#projects" class="btn">View My Work</a>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn secondary">Get in Touch</a>
+            </div>
+            
+            <div class="stats-row">
+                <div class="stat">
+                    <h3>10+</h3>
+                    <p>Years Exp.</p>
+                </div>
+                <div class="stat">
+                    <h3>5+</h3>
+                    <p>Major Firms</p>
+                </div>
+                <div class="stat">
+                    <h3>100%</h3>
+                    <p>Project Delivery</p>
+                </div>
+            </div>
         </div>
     </section>
 
- <!-- ===== ABOUT SECTION ===== -->
-<section id="about" class="about">
-    <div class="about-container">
-        <h2 class="section-title">About Me</h2>
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">Professional Profile</h2>
+            
+            <div class="about-grid">
+                <div class="profile-card">
+                    <!-- Ensure your photo is named pic.jpg -->
+                    <img src="pic.jpg" alt="Mohammed Amir Hussain" class="profile-pic">
+                    <div class="profile-badge">
+                        <i class="fas fa-hard-hat"></i> Senior Engineer
+                    </div>
+                </div>
 
-        <div class="about-content">
-            <!-- Profile Image -->
-            <div class="profile-img">
-                <img src="pic.jpg" alt="Mohammed Amir Hussain - Electrical Engineer">
-            </div>
-
-            <!-- About Text -->
-            <div class="about-text">
-                <h3>Mohammed Amir Hussain</h3>
-                <h4>Electrical Engineer</h4>
-
-                <p>
-                    Electrical Engineer with over <strong>10 years of professional experience</strong> in 
-                    power distribution design, installation, testing, and commissioning of electrical systems.
-                    Proven expertise across the <strong>aviation, construction, and mining sectors</strong>, 
-                    delivering reliable and efficient solutions.
-                </p>
-
-                <p>
-                    Highly skilled in <strong>ETAP, AutoCAD, and Primavera P6</strong>, with a strong background 
-                    in project planning and execution, consistently delivering projects 
-                    <strong>on time and within budget</strong>.
-                </p>
-
-                <a href="#projects" class="btn">View My Work</a>
+                <div class="about-text">
+                    <h3>Designing Efficient Power Systems</h3>
+                    <p>
+                        Electrical Engineer with over <strong>10 years of professional experience</strong> in power distribution design, installation, testing, and commissioning of electrical systems.
+                        Proven expertise across the <strong>aviation, construction, and mining sectors</strong>, delivering reliable and efficient solutions.
+                    </p>
+                    <p>
+                        Highly skilled in <strong>ETAP, AutoCAD, and Primavera P6</strong>, with a strong background in project planning and execution, consistently delivering projects <strong>on time and within budget</strong>.
+                    </p>
+                    
+                    <ul class="check-list">
+                        <li><i class="fas fa-check-circle"></i> Power Distribution & Grounding</li>
+                        <li><i class="fas fa-check-circle"></i> Testing & Commissioning</li>
+                        <li><i class="fas fa-check-circle"></i> Project Planning (Primavera P6)</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-
-
-
-<!-- ===== PROJECTS SECTION ===== -->
-<section class="projects" id="projects">
-    <div class="projects-container">
-
-        <h2 class="section-title">Projects</h2>
-
-        <div class="projects-grid">
-
-            <div class="project-card">
-                <h3>Leap Networks Arabia</h3>
-                <p>
-                    Design and implement electrical systems for large scale mining Operation including power distribution, lighting, and grounding systems. 
-                </p>
-                <span class="tech">Electrical designing • Primavera P6 • ETAP</span>
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="skills section bg-dark">
+        <div class="container">
+            <h2 class="section-title">Technical Proficiency</h2>
+            <div class="skills-grid">
+                <!-- Skill Category 1 -->
+                <div class="skill-card">
+                    <i class="fas fa-drafting-compass icon"></i>
+                    <h3>Design & Planning</h3>
+                    <div class="tags">
+                        <span>ETAP</span>
+                        <span>AutoCAD</span>
+                        <span>Primavera P6</span>
+                        <span>Load Flow Analysis</span>
+                    </div>
+                </div>
+                <!-- Skill Category 2 -->
+                <div class="skill-card">
+                    <i class="fas fa-cogs icon"></i>
+                    <h3>Operations</h3>
+                    <div class="tags">
+                        <span>Maximo</span>
+                        <span>CMMS</span>
+                        <span>Aconex</span>
+                        <span>Preventive Maintenance</span>
+                    </div>
+                </div>
+                <!-- Skill Category 3 -->
+                <div class="skill-card">
+                    <i class="fas fa-plug icon"></i>
+                    <h3>Field Engineering</h3>
+                    <div class="tags">
+                        <span>Commissioning</span>
+                        <span>Switchgear</span>
+                        <span>Transformers</span>
+                        <span>Power Plants</span>
+                    </div>
+                </div>
             </div>
-
-            <div class="project-card">
-                <h3>Evan Operation and Maintenance co</h3>
-                <p>
-                    Performed preventive and corrective maintenance on electrical equipment, including motors, transformers, and switchgear to ensure optimal performance and minimize downtime.
-                </p>
-                <span class="tech">Electrical Maintenance • Maximo • Cmms</span>
-            </div>
-
-            <div class="project-card">
-                <h3>Pravin Electrical Pvt Ltd</h3>
-                <p>
-                    Led installation and commissioning of electrical systems for commercial and residential buildings, ensuring compliance with safety standards and regulations.
-                </p>
-                <span class="tech">Electrical Intallation • Design • Commissioning</span>
-            </div>
-
-            <div class="project-card">
-                <h3>Saudi Binaldin Group</h3>
-                <p>
-                    Managed a power plant upgrade project, coordinating with contractors and vendors to ensure timely completion within budget.
-                </p>
-                <span class="tech">Upgradation of power plant • Planning & scheduling • Testing</span>
-            </div>
-
-            <div class="project-card">
-                <h3>ETA Consortium Pvt Ltd</h3>
-                <p>
-                    Managed elecrtical work for large scale infrastructure projects including airport.
-                </p>
-                <span class="tech">Electrical Installation • Testing and Commissioning • Aconex</span>
-            </div>
-    </div>
-</section>
-
-    </div>
-</section>
-<!-- ===== CONTACT SECTION ===== -->
-<section class="contact" id="contact">
-    <div class="contact-container">
-
-        <h2 class="section-title">Contact Us</h2>
-
-        <div class="contact-content">
-
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <h3>Get In Touch</h3>
-                <p>
-                    Have a project idea or just want to say hello?  
-                    Feel free to reach out — we’re always open to discussing
-                    new opportunities and creative ideas.
-                </p>
-
-                <ul>
-                    <li><strong>Email:</strong> mdamirhussain121@gmail.com</li>
-                    <li><strong>Phone:</strong> +966 557436295</li>
-                    <li><strong>Location:</strong> Turaif, Saudi Arabia</li>
-                </ul>
-            </div>
-
-            <!-- Contact Form -->
-            <form class="contact-form" id="contactForm">
-                <input type="text" id="name" placeholder="Your Name" required />
-                <input type="email" id="email" placeholder="Your Email" required />
-                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-                <p class="form-message" id="formMessage"></p>
-            </form>
-
         </div>
-    </div>
-    <!-- Contact Social Links -->
-<div class="contact-socials">
-    <p>Or connect with us on</p>
+    </section>
 
-    <a href="mailto:hello@fictionalstudio.com">
-        📧 mdamirhussain121@gmail.com
-    </a>
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">Project History</h2>
+            <div class="projects-grid">
 
-    <a href="https://wa.me/12345678900" target="_blank">
-        💬 WhatsApp: +966 557436295
-    </a>
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>Leap Networks Arabia</h3>
+                        <span class="role">Design & Implementation</span>
+                    </div>
+                    <p>Designed and implemented electrical systems for large-scale mining operations, including power distribution, lighting, and grounding systems.</p>
+                    <div class="card-footer">
+                        <span class="tech-tag">Electrical Design</span>
+                        <span class="tech-tag">ETAP</span>
+                        <span class="tech-tag">Primavera P6</span>
+                    </div>
+                </div>
 
-    <a href="https://www.linkedin.com/in/fictional-profile" target="_blank">
-        🔗 LinkedIn Profile
-    </a>
-</div>
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>Evan Operation & Maintenance</h3>
+                        <span class="role">Maintenance</span>
+                    </div>
+                    <p>Performed preventive and corrective maintenance on electrical equipment (motors, transformers, switchgear) to ensure optimal performance.</p>
+                    <div class="card-footer">
+                        <span class="tech-tag">Maximo</span>
+                        <span class="tech-tag">CMMS</span>
+                        <span class="tech-tag">Maintenance</span>
+                    </div>
+                </div>
 
-</section>
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>Pravin Electrical Pvt Ltd</h3>
+                        <span class="role">Installation & Comm.</span>
+                    </div>
+                    <p>Led installation and commissioning of electrical systems for commercial and residential buildings, ensuring compliance with safety standards.</p>
+                    <div class="card-footer">
+                        <span class="tech-tag">Installation</span>
+                        <span class="tech-tag">Commissioning</span>
+                        <span class="tech-tag">Safety</span>
+                    </div>
+                </div>
 
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>Saudi Binladin Group</h3>
+                        <span class="role">Power Plant Upgrade</span>
+                    </div>
+                    <p>Managed a power plant upgrade project, coordinating with contractors and vendors to ensure timely completion within budget.</p>
+                    <div class="card-footer">
+                        <span class="tech-tag">Power Plant</span>
+                        <span class="tech-tag">Scheduling</span>
+                        <span class="tech-tag">Vendor Mgmt</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>ETA Consortium Pvt Ltd</h3>
+                        <span class="role">Infrastructure</span>
+                    </div>
+                    <p>Managed electrical work for large-scale infrastructure projects including airport systems.</p>
+                    <div class="card-footer">
+                        <span class="tech-tag">Aviation</span>
+                        <span class="tech-tag">Testing</span>
+                        <span class="tech-tag">Aconex</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact section bg-dark">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                
+                <div class="contact-details">
+                    <h3>Contact Information</h3>
+                    <p>Always open to discussing new opportunities, consulting work, or project collaborations.</p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:mdamirhussain121@gmail.com">mdamirhussain121@gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+966557436295">+966 557436295</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Turaif, Saudi Arabia</span>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://wa.me/966557436295" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:mdamirhussain121@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="btn primary full-width">Send Message</button>
+                    <p class="form-message" id="formMessage"></p>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Mohammed Amir Hussain. All Rights Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
-    <section class="about reveal" id="about">
-
 </body>
 </html>
