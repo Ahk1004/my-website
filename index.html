@@ -248,23 +248,36 @@
                         <a href="https://www.linkedin.com/in/mohammedamirhussain" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
+<form 
+    class="contact-form" 
+    id="contactForm"
+    action="https://api.web3forms.com/submit"
+    method="POST"
+>
+    <!-- Web3Forms Access Key -->
+    <input type="hidden" name="access_key" value="8825c644-25ba-4b68-abb2-2f0916a0ce96">
 
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" required>
-                        <label for="name">Your Name</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" required>
-                        <label for="email">Your Email</label>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" rows="4" required></textarea>
-                        <label for="message">Message</label>
-                    </div>
-                    <button type="submit" class="btn primary full-width">Send Message</button>
-                    <p class="form-message" id="formMessage"></p>
-                </form>
+    <div class="form-group">
+        <input type="text" id="name" name="name" required>
+        <label for="name">Your Name</label>
+    </div>
+
+    <div class="form-group">
+        <input type="email" id="email" name="email" required>
+        <label for="email">Your Email</label>
+    </div>
+
+    <div class="form-group">
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <label for="message">Message</label>
+    </div>
+
+    <button type="submit" class="btn primary full-width">
+        Send Message
+    </button>
+
+    <p class="form-message" id="formMessage"></p>
+</form> 
 
             </div>
         </div>

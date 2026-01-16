@@ -64,7 +64,6 @@ const contactForm = document.getElementById("contactForm");
 const formMessage = document.getElementById("formMessage");
 
 contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
     // In a real website, you would connect this to a backend or EmailJS
     const btn = contactForm.querySelector("button");
     const originalText = btn.innerText;
